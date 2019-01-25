@@ -1,0 +1,11 @@
+insert into monamitechdb.Lendme_DisplayLanguageMap values('ara','SM219','المبلغ الذي تم إدخاله أكبر من الحد الأقصى لمبلغ السداد. يرجى إعادة إدخال.');
+insert into monamitechdb.Lendme_DisplayLanguageMap values('eng','SM219','The entered amount is greater than the maximum repayment amount. Please re enter. ');
+insert into monamitechdb.Lendme_DisplayLanguageMap values('ara','SM220','المبلغ الذي تم إدخاله أقل من الحد الأدنى لمبلغ السداد. يرجى إعادة إدخال.');
+insert into monamitechdb.Lendme_DisplayLanguageMap values('eng','SM220','The entered amount is less than the minimum repayment amount. Please re enter.');
+
+insert into monamitechdb.Lendme_DisplayLanguageMap values('ara','SM221','المبلغ الذي تم إدخاله أكبر من الحد الأقصى لمبلغ القرض. يرجى إعادة إدخال.');
+insert into monamitechdb.Lendme_DisplayLanguageMap values('eng','SM221','The entered amount is greater than the maximum loan amount. Please re enter.');
+
+insert into monamitechdb.Lendme_DisplayLanguageMap values('ara','SM222','المبلغ الذي تم إدخاله أقل من الحد الأدنى لمبلغ القرض. يرجى إعادة إدخال.');
+insert into monamitechdb.Lendme_DisplayLanguageMap values('eng','SM222','The entered amount is less than the minimum loan amount. Please re enter.');
+

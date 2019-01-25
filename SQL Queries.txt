@@ -1,0 +1,15 @@
+For viewing all data= SELECT * FROM monamitechdb.Privilege;
+For Dropping a table= DROP TABLE account ;
+For deleting one column in the table= ALTER TABLE Lendme_Product1 DROP FOREIGN KEY Lndme_productType_Code;
+For Deleting row by applying where condition:DELETE FROM table_name WHERE condition;
+UPDATE monamitechdb.Lendme_DisplayLanguageMap SET `Lndme_DisplayFieldDescription`='SORRY\nYou are not eligible for a loan right now
+ ' where  `Lndme_DisplayFieldCode`='SM161';
+
+
+SELECT * FROM information_schema.tables WHERE table_schema ='monamitechdb' and table_collation != 'utf8_general_ci';
+
+(For Checking if there is type of Charset Latin1)
+INSERT INTO monamitechdb.tbl_Lendme_Faq (Id, Lendme_Question, Lendme_Answer, Lendme_LanguageCode, Lendme_BankCode) VALUES ('2', 'How ?', 'By..', 'eng', '1');
+
+
+

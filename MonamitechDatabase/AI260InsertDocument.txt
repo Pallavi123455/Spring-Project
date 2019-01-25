@@ -1,0 +1,2 @@
+insert into monamitechdb.Lendme_DisplayLanguageMap values('ara','SM215',' القسط الشهري');
+insert into monamitechdb.Lendme_DisplayLanguageMap values('eng','SM215',' Monthly EMI');

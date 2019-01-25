@@ -1,0 +1,17 @@
+UPDATE monamitechdb.Lendme_DisplayLanguageMap SET `Lndme_DisplayFieldDescription`='Confirm' WHERE `Lndme_LanguageCode`='eng' and `Lndme_DisplayFieldCode`='SM184';
+UPDATE monamitechdb.Lendme_DisplayLanguageMap SET `Lndme_DisplayFieldDescription`='Transfer to Bank Account' WHERE `Lndme_LanguageCode`='eng' and `Lndme_DisplayFieldCode`='SM109';
+Update the queries in the Monamitech Database in the Dev,Prod and Qa
+{code: java sql }
+--Updates
+UPDATE monamitechdb.Lendme_DisplayLanguageMap
+SET Lndme_DisplayFieldDescription='Confirm'
+WHERE
+  Lndme_LanguageCode='eng' and Lndme_DisplayFieldCode='SM184';
+
+UPDATE monamitechdb.Lendme_DisplayLanguageMap
+SET Lndme_DisplayFieldDescription='Transfer to Bank Account'
+WHERE
+  Lndme_LanguageCode='eng' and Lndme_DisplayFieldCode='SM109';
+
+{code}
+environment.

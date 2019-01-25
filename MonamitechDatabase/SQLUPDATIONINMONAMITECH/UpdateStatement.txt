@@ -1,0 +1,3 @@
+UPDATE monamitechdb.Lendme_DisplayLanguageMap SET `Lndme_DisplayFieldDescription`='SORRY \nYou are not eligible for a loan right now' WHERE `Lndme_LanguageCode`='eng' and `Lndme_DisplayFieldCode`='SM25';
+UPDATE monamitechdb.Lendme_DisplayLanguageMap SET `Lndme_DisplayFieldDescription`='Personal Loan' WHERE `Lndme_LanguageCode`='eng' and `Lndme_DisplayFieldCode`='SM161';
+UPDATE monamitechdb.Lendme_DisplayLanguageMap SET Lndme_DisplayFieldDescription='Monthly\nRepayment' WHERE Lndme_LanguageCode = 'eng' and Lndme_DisplayFieldCode='SM44'; 

@@ -1,0 +1,4 @@
+insert into monamitechdb.lendme_displaylanguagemap values(716,'ara','SM234','يرجى تحديد نطاق زمني مناسب.');
+insert into monamitechdb.lendme_displaylanguagemap values(717,'eng','SM234','Please select proper time range.');
+insert into monamitechdb.Lendme_DisplayLanguageMap values(718,'ara','SM233','القسط الشهري');
+insert into monamitechdb.Lendme_DisplayLanguageMap values(719,'eng','SM233','Please select proper date range.');

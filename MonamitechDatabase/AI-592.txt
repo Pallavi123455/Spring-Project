@@ -1,0 +1,4 @@
+UPDATE monamitechdb.Lendme_DisplayLanguageMap SET Lndme_DisplayFieldDescription='معرف البريد الإلكتروني هذا موجود بالفعل. يرجى استخدام بريد إلكتروني آخر للتسجيل.
+' WHERE Lndme_LanguageCode='ara' and Lndme_DisplayFieldCode='SM153';
+UPDATE monamitechdb.Lendme_DisplayLanguageMap SET Lndme_DisplayFieldDescription=' This email id already exist. Please use another email for registration.
+' WHERE Lndme_LanguageCode='eng' and Lndme_DisplayFieldCode='SM153';

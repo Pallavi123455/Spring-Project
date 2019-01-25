@@ -1,0 +1,4 @@
+insert into monamitechdb.Lendme_DisplayLanguageMap values('ara','SM223','يرجى تحميل الصور الأمامية والخلفية لبطاقة EID الخاصة بك بشكل صحيح.');
+insert into monamitechdb.Lendme_DisplayLanguageMap values('eng','SM223','Please upload front and back images of your EID card correctly.');
+UPDATE monamitechdb.Lendme_DisplayLanguageMap SET Lndme_DisplayFieldDescription='Please upload front and back images of your EID card' WHERE Lndme_LanguageCode = 'eng' and Lndme_DisplayFieldCode='SM191'; 
+

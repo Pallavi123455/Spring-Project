@@ -1,0 +1,44 @@
+﻿Why we are Using Utf8 over latin1?
+Because for English language Latin1 is Okay But when the language will change then there will be problem in representation of other language like chineese ,Japaneese.....
+For Example: When we are writing an email in English and want to convert(Parse) it into other language then it is unable to convert due to CharSet.
+Because in case of PlainText ascii=characters=8 bits
+In Unicode, a letter maps to something called a code point 
+U+0639.  This magic number is called a code point. The U+ means “Unicode” and the numbers are hexadecimal. U+0639 is the Arabic letter Ain. The English letter A would be U+0041.
+Hello
+
+which, in Unicode, corresponds to these five code points:
+
+U+0048 U+0065 U+006C U+006C U+006F.
+Content-Type: text/plain; charset="UTF-8"
+CREATE DATABASE db_name
+    [[DEFAULT] CHARACTER SET charset_name]
+    [[DEFAULT] COLLATE collation_name]
+
+ALTER DATABASE db_name
+    [[DEFAULT] CHARACTER SET charset_name]
+    [[DEFAULT] COLLATE collation_name]
+UTF8 is used to encode text in any language.
+It can use from 1 to 4  8-Bit-bytes  to encode a unicode Code point.
+In ASCII we can encode for some languages.
+First Baudot(5 Bit)
+Then ASCII(7 Bit)
+ASCII+Codepages
+Character Encoding(Unicode Approach(Concept of code points))
+Unicode Consortium is a global Organization.It assigns unique integer codes to all characters which  need encoding.And usually code points are 
+represented in HexaDecimal Base.
+Code points assign to EnglishCharacter ,Currency Symbols,Mathematical Symbols,to scripts(for language).
+Example Using CodePoint and UTF8
+Indian Government introduced a new symbol for Indian Rupee	
+Unicode Consortium allocated a Code Point Of 20B9(hex)
+20 B9 in hex translated to UTF-8  becomes E282B9(hex)
+when a program encounters E282B9
+it finds the font and renders it.
+Code Point Range:
+1.One Byte Template(0000-007F)
+2.Two Byte Template(0080-07ff)
+3.Three Byte Template(0800-ffff)
+Disadvantages:
+UTF-8 will be larger than some other encodings
+can double the size of Greek encodings.
+can triple the size when compared to some encodings for Hindi and Thai.
+Asian Scripts like Japaneese,Chinease and Korean require  3 Bytes in UTF-8  and 2 in UTF-16.

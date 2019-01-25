@@ -1,0 +1,4 @@
+UPDATE monamitechdb.tbl_events SET `event_desc`='All documents have associated with job type code are collected' WHERE event_id='6' and event_code='DOCCOMP';
+UPDATE monamitechdb.tbl_events SET `event_desc`='All collateral documents have associated with job type code are collected' WHERE event_id='5' and event_code='COLLCOMP';
+UPDATE monamitechdb.tbl_events SET `event_desc`='KYC process has been completed with biometric validation'  WHERE event_id='4' and event_code='KYCCOMP';
+

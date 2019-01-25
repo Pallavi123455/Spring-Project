@@ -1,0 +1,8 @@
+LENDME APP:SWIGGER(designed in Android)
+http://alhodevenv-envmnt.eu-west-1.elasticbeanstalk.com/swagger-ui.html#/lendme-controller
+EZ-Verify WebApp:
+For QA:
+http://angularuiforalho.s3-website-eu-west-1.amazonaws.com/#/login
+For 
+EZ Start web app QA Enviornment
+https://ezstart.samacapital.monamisoft.net/

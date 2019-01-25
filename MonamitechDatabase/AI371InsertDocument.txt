@@ -1,0 +1,2 @@
+insert into monamitechdb.Lendme_DisplayLanguageMap values('ara','SM216','تم العثور على الهوية الإماراتية');
+insert into monamitechdb.Lendme_DisplayLanguageMap values('eng','SM216','Emirates ID found with');
