@@ -1,0 +1,11 @@
+package com.java.hello;//package name must be in small letter
+public class HelloWorld
+{
+public static void main(String args[])
+{
+System.out.println("HelloWorld");
+}
+}
+Is constructor responsible for Object creation?
+Why static block executed first?
+
