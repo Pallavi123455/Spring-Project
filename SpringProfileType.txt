@@ -1,0 +1,7 @@
+Profile is nothing but a key to identify an environment.
+
+In this example, we will use two profiles
+
+dev
+prod
+Using @Profile annotation we can indicate the active profile in which a specific bean should be created.

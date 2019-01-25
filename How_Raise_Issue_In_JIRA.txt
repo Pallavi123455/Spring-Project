@@ -1,0 +1,84 @@
+First open JIRA
+Then go to open issue
+TH
+Then add +mark in creat issue side
+Then add Bug 
+Then click on that Bug
+THen add in new Bug
+Then add in summary as the issue name eg:Delete Agent always returning Success response for each and every response
+Then add Description as:
+Steps:
+1.Open PostMan
+2.Generated Token For URL Authorization[Used for Security API and should be binded with URL
+3.Create the Request in following format
+Method Type: Post
+URL:http://localhost:8080/collateral
+Request Body
+
+{ "collcode":"ghj", "collName":"njkhjn" }
+6.Add Generated Token of Type Bearer
+7. Click on Send 
+Actual Output:
+201 status sent back and colleteral is created successfully
+Expected Output:
+Along with 201 status created Colleteral must be returned
+Then we have to add the attachment.
+Attachment should be in this format
+Issue: Agent Object not sent back after creating agent
+Steps Followed in post Man:
+Request Data:
+ 
+
+Response Data:
+ 
+URL: http://localhost:8080/agent/create
+Request:
+{
+	"agentCode":"addf",
+	"agentName":"Ali dcs",
+	"agentMobile":"784583456",
+	"agentEmail":"sdfghm@gmail.com"
+	}
+Actual Response:
+{
+    "serviceStatus": {
+        "statusCode": 9101,
+        "statusMessage": "SUCCESS"
+    },
+    "errorDetails": null,
+    "validationErrors": null,
+    "docStaus": false,
+    "kycStatus": false,
+    "agents": null,
+    "jobTypes": null,
+    "collaterals": null,
+    "documents": null,
+    "listOfJobs": null,
+    "assignedjobs": null,
+    "jobColMapList": null,
+    "jobDocMapList": null,
+    "agent": null,
+    "jobType": null,
+    "collateral": null,
+    "document": null,
+    "jobColMap": null,
+    "jobDocMap": null,
+    "job": null,
+    "jobtypeName": null,
+    "pendingJobDetails": null,
+    "pendingJob": null,
+    "agentActiveCode": null,
+    "collateralStatus": false,
+    "firstLogin": null
+}
+Expected Response:
+Agent object should be created and sent back with the response data.
+Basic Agent details should be returned as part of response
+
+
+Priority we have to add according to the code level
+In labels we have to add according to the issue eg:medium
+Then add attachment
+In linked issue we have to add relate to or whatever
+Then we have to add asignee means to whom we will assign
+Then in Sprint we have to add

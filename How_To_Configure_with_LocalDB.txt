@@ -1,0 +1,15 @@
+First pull the project From Git
+Then open my Sql work bench
+Connection on in the XAMP server and start Apache and MySQL
+In My Sql workbench add A connection by + button
+Then add in connection name what ever you want and port name according to the server port name
+IN host name You add whatever the host name is written in the Server side.eg:monamitechdb.cigv1ocig41u.eu-west-1.rds.amazonaws.com
+And User name and password
+Then click ok and then Do test Connection
+Then open that Sql connection 
+Then in db there Is Schema Wizard Transfer Do that
+Then add source and destaination means Server to Local
+then next next and finish
+Then delete that connection.(Before deleting check whether the db with table either transfered to the Main Local DB connection or not)
+Then execute the Query
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'root';

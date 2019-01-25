@@ -1,0 +1,31 @@
+﻿Logback Project
+Logback is intended as a successor to the popular log4j project, picking up where log4j leaves off.
+
+Logback's architecture is sufficiently generic so as to apply under different circumstances. At present time, logback is divided into three modules, logback-core, logback-classic and logback-access.
+
+The logback-core module lays the groundwork for the other two modules. The logback-classic module can be assimilated to a significantly improved version of log4j. Moreover, logback-classic natively implements the SLF4J API so that you can readily switch back and forth between logback and other logging frameworks such as log4j or java.util.logging (JUL).
+
+The logback-access module integrates with Servlet containers, such as Tomcat and Jetty, to provide HTTP-access log functionality. Note that you could easily build your own module on top of logback-core.
+Actual logging in a larger application would not be that different. The general pattern for logging statements would not change. Only the configuration process would be different. However, you would probably want to customize or configure logback according to your needs. Logback configuration will be covered in subsequent chapters.
+%d{HH:mm:ss.SSS} – a timestamp with hours, minutes, seconds and milliseconds
+[%thread] – the thread name generating the log message, surrounded by square brackets
+%-5level – the level of the logging event, padded to 5 characters
+%logger{36} – the name of the logger, truncated to 35 characters
+%msg%n – the log messages followed by the platform dependent line separator character
+4. Logger Level
+Log4j and Log4j2 have six logger levels; Logback has five.
+
+Level	Description	 								Log4j	Logback	Log4j2
+TRACE	The most detailed informational events						Yes	Yes	Yes
+DEBUG	Fine-grained informational events that are most useful to debug an application	Yes	Yes	Yes
+INFO	Informational messages that highlight the progress of the application		Yes	Yes	Yes
+WARN	Potentially harmful situations							Yes	Yes	Yes
+ERROR	Error events									Yes	Yes	Yes
+FATAL	Error lead the application to abort						Yes	No	Yes
+OFF	The highest possible rank and is intended to turn off logging.
+FATAL	Severe errors that cause premature termination. Expect these to be immediately visible on a status console.
+ERROR	Other runtime errors or unexpected conditions. Expect these to be immediately visible on a status console.
+WARN	Use of deprecated APIs, poor use of API, 'almost' errors, other runtime situations that are undesirable or unexpected, but not necessarily "wrong". Expect these to be immediately visible on a status console.
+INFO	Interesting runtime events (startup/shutdown). Expect these to be immediately visible on a console, so be conservative and keep to a minimum.
+DEBUG	Detailed information on the flow through the system. Expect these to be written to logs only. Generally speaking, most lines logged by your application should be written as DEBUG.
+TRACE	Most detailed information. Expect these to be written to logs only. Since version

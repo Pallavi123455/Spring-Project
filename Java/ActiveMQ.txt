@@ -1,0 +1,10 @@
+ActiveMQ:
+ActiveMQ is the most popular and powerful open source messaging and Integration patterns server.
+JMS is only an API specification, not an implementation. You need a piece of software that implements the JMS API if you want to do something with message queues.
+JMS is a specification. JMS has three main parts to it. The first is the producer, which is nothing more than a bean that submits a "message" to a JMS broker (#2) (the system that manages messages between producers and consumers). In this case, ActiveMQ is the broker. Once the broker receives a message, the consumer (#3), or Message-Driven Bean (MDB), processes the message.
+
+ActiveMQ is a message broker which implements the JMS API. Besides ActiveMQ there are many other products that implement the JMS API.
+A message broker (also known as an integration broker or interface engine[1]) is an intermediary computer program module that translates a message from the formal messaging protocol of the sender to the formal messaging protocol of the receiver.
+JMS - Apache ActiveMQ Installation
+
+Apache ActiveMQ is an open source message broker written in Java that offers JMS, REST and WebSocket interfaces. It supports protocols like AMQP, MQTT, OpenWire, and STOMP that can be used by applications in different languages.

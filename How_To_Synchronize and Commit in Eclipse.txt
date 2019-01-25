@@ -1,0 +1,9 @@
+FIRST OF ALL CHECK IN WHICH BRANCH YOU ARE MASTER OR LOCAL BRANCH?
+CREATE A LOCAL BRANCH.
+Before Commiting And Synchronizing First we have to upload the Documentation about issues in the creates Issue no.
+Where we have already put the file of created issue
+Then Select the project and click the Option Team and then Synchronize Workspace
+Then compare one by one
+Then Select to which classes you want to commit then add that classes and add comments ([Ed]:Related Issue)
+Then click on push and commit.
+Then Check in Github and create Pull REquest.

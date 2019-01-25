@@ -1,0 +1,7 @@
+Need for Application Configuration
+Configuration for applications vary from one environment to another
+
+You would want to connect to a different database or queues
+You would want to connect with different services
+You would want to configure less logging in production
+You might want to have different custom configuration

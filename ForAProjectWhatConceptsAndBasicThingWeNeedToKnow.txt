@@ -1,0 +1,3 @@
+Pojo Class:
+Here The POJO class will implement the Serializable class
+2.For Pojo class @Entity Annotation used.

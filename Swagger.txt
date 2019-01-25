@@ -1,0 +1,7 @@
+private String[] getPublicUrls() {
+		return new String[] { "/app/*", "/token/*", "/rest/*", "/loan/*", "/swagger-ui.html",
+				"/webjars/springfox-swagger-ui/css/*", "/webjars/springfox-swagger-ui/lib/*",
+				"webjars/springfox-swagger-ui/*", "/swagger-resources/configuration/*", "/*", "/v2/api-docs","/rest/iban/*","/bankavilabiltydetails/*","/loan-x/testappointment" };
+Just Have to commentLine
+/*@Configuration
+@EnableWebMvc*/

@@ -1,0 +1,52 @@
+1.What Is JMS?
+JMS(Java Message Service) is an API by which we can read send and create message and we can send the message one application to the other Application.
+2.What are the things we should Know in JMS?
+1.JMS Client(It is the Application which is using the JMS)
+2.JMS Provider(Which manages message )
+3.JMS Application
+4.Producer(JMS client that sends the message)
+5.consumer(JMS client that recieves the message)
+Two Model are there:
+1.Publish/Subscribe Model(One to many)(Topic .In this case the message will Passes in Topic with Subscribed Because there are So many Reciever.To recognise the Reciever...)
+2.Point to Point Model(One to one):(Queue Because only one Rreciever is there ...So The message will pass in Queue)
+Sender to reciever But there is many possibility of reciever.But It will Communicate to one Reciever.
+Advantages Of JMS:
+1.Asynchronous Message Passing(In which sender and reciever do not wait for each other while transferring the message)
+
+*How to set up JMS in local Machine?
+ANS:In Asynchronous message consumption there is no timing dependancy between the production and consumption message.
+A client can send message to the reciever instead of blocking.
+JMS Topics:
+In JMS a topic implements publish and subscribe semantics.When we will publish a message it goes to all subscriber who are interested 
+Every message successfully processed is acknowledged by the receiver.
+JMS Queues:
+This implements load balance semantics.Only one message recieved by one Consumer.If there is no consumer then it will wait untill a Consumer get the message.
+It is also called Point to Point message.
+JMS Publisher:
+The JMS Publisher recieves message from Java Message System Complaint message brokers such as IBM websphere Mq and publishes them as Topics.
+Exceptions
+Possible JMS exceptions that may occur are are below:
+
+IllegalStateException: This exception is thrown when a method is invoked at an illegal or inappropriate time or if the provider is not in an appropriate state for the requested operation. For example, this exception must be thrown when a domain inappropriate method is called, such as TopicSession.CreateQueueBrowser.
+
+InvalidClientIDException: This exception must be thrown when a client attempts to set a connection's client ID to a value that is rejected by a provider.
+
+InvalidDestinationException: This exception must be thrown when a destination either is not understood by a provider or is no longer valid.
+
+InvalidSelectorException: This exception must be thrown when a JMS client attempts to give a provider a message selector with invalid syntax.
+
+JMSSecurityException: This exception must be thrown when a provider rejects a user name/password submitted by a client. It may also be thrown for any case where a security restriction prevents a method from completing.
+
+MessageEOFException: This exception must be thrown when an unexpected end of stream has been reached when a StreamMessage or BytesMessage is being read.
+
+MessageFormatException: This exception must be thrown when a JMS client attempts to use a data type not supported by a message or attempts to read data in a message as the wrong type. It must also be thrown when equivalent type errors are made with message property values.
+
+MessageNotReadableException: This exception must be thrown when a JMS client attempts to read a write-only message.
+
+MessageNotWriteableException: This exception must be thrown when a JMS client attempts to write to a read-only message.
+
+ResourceAllocationException: This exception is thrown when a provider is unable to allocate the resources required by a method. For example, this exception should be thrown when a call to TopicConnectionFactory.createTopicConnection fails due to a lack of JMS provider resources.
+
+TransactionInProgressException: This exception is thrown when an operation is invalid because a transaction is in progress. For instance, an attempt to call Session.commit when a session is part of a distributed transaction should throw a TransactionInProgressException.
+
+TransactionRolledBackException: This exception must be thrown when a call to Session.commit results in a rollback of the current transaction.

@@ -1,0 +1,43 @@
+1.What is difference between float and double .What is the default value of float and double and Both are platform dependent and java is platform independent?
+why Float and Double  are not using in real time project for monetary calculation?
+Ans:This is one of common mistake Java programmer make until they are familiar with BigDecimal class. When we learn Java programming we have been told that use float and double to represent decimal numbers its not been told that result of floating point number is not exact, which makes them unsuitable for any financial calculation which requires exact result and not approximation. float and double are designed for engineering and scientific calculation and many times doesn’t produce exact result also result of floating point calculation may vary from JVM to JVM. Look at below example of BigDecimal and double primitive which is used to represent money value, its quite clear that floating point calculation may not be exact and one should use BigDecimal for financial calculations.
+
+Read more: https://javarevisited.blogspot.com/2012/02/java-mistake-1-using-float-and-double.html#ixzz5QrUOKIZO
+public class BigDecimalExample {
+ 
+    public static void main(String args[]) throws IOException {
+      
+      //floating point calculation
+      double amount1 = 2.15;
+      double amount2 = 1.10;
+      System.out.println("difference between 2.15 and 1.0 using double is: " + (amount1 - amount2));
+    
+      //Use BigDecimal for financial calculation
+      BigDecimal amount3 = new BigDecimal("2.15");
+      BigDecimal amount4 = new BigDecimal("1.10") ;
+      System.out.println("difference between 2.15 and 1.0 using BigDecimal is: " + (amount3.subtract(amount4)));      
+    }     
+}
+Output:
+difference between 2.15 and 1.0 using double is: 1.0499999999999998
+difference between 2.15 and 1.0 using BigDecmial is: 1.05
+
+
+Read more: https://javarevisited.blogspot.com/2012/02/java-mistake-1-using-float-and-double.html#ixzz5QrHHtidL
+2.what is the technique used in Bubble sort?
+3.In case of C and C++ who will handle the exception If the Exception is not handled by the method level and class level?
+4.Is Multiple Inheritance supported By java?If not then please see this scenario
+Public class A
+{
+}
+Public class B extends A,Object
+{
+
+}
+5.Without using ArrayList .How can we write a class with basic ArrayList feature
+6.Give an example Of marker interface.we know interface has no Body Then why interface.
+7.Why SQL exception and IOException ?Why it is within the checked Exception not in Unchecked Exception?
+8."/" How to print this using by char?
+9.Serialization and Deserilization
+10.
+

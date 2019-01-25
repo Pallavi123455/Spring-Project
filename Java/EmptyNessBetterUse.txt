@@ -1,0 +1,77 @@
+StringUtils.isBlank() method check to see is the string contains only whitespace characters, empty or has a null value. If these condition is true that the string considered blank.
+
+There’s also a StringUtils.isEmpty(), only these method doesn’t check for whitespaces only string. For checking the oposite condition there are StringUtils.isNotBlank() and StringUtils.isNotEmpty().
+package org.kodejava.example.commons.lang;
+
+import org.apache.commons.lang.StringUtils;
+
+public class CheckEmptyString {
+    public static void main(String[] args) {
+        String var1 = null;
+        String var2 = "";
+        String var3 = "    ttt";
+        String var4 = "Hello World";
+
+        System.out.println("var1 is blank? = " + StringUtils.isBlank(var1));
+        System.out.println("var2 is blank? = " + StringUtils.isBlank(var2));
+        System.out.println("var3 is blank? = " + StringUtils.isBlank(var3));
+        System.out.println("var4 is blank? = " + StringUtils.isBlank(var4));
+
+        System.out.println("var1 is not blank? = " + StringUtils.isNotBlank(var1));
+        System.out.println("var2 is not blank? = " + StringUtils.isNotBlank(var2));
+        System.out.println("var3 is not blank? = " + StringUtils.isNotBlank(var3));
+        System.out.println("var4 is not blank? = " + StringUtils.isNotBlank(var4));
+
+        System.out.println("var1 is empty? = " + StringUtils.isEmpty(var1));
+        System.out.println("var2 is empty? = " + StringUtils.isEmpty(var2));
+        System.out.println("var3 is empty? = " + StringUtils.isEmpty(var3));
+        System.out.println("var4 is empty? = " + StringUtils.isEmpty(var4));
+
+        System.out.println("var1 is not empty? = " + StringUtils.isNotEmpty(var1));
+        System.out.println("var2 is not empty? = " + StringUtils.isNotEmpty(var2));
+        System.out.println("var3 is not empty? = " + StringUtils.isNotEmpty(var3));
+        System.out.println("var4 is not empty? = " + StringUtils.isNotEmpty(var4));
+    }
+}
+The result of our program are:
+
+var1 is blank? = true
+var2 is blank? = true
+var3 is blank? = true
+var4 is blank? = false
+
+var1 is not blank? = false
+var2 is not blank? = false
+var3 is not blank? = false
+var4 is not blank? = true
+
+var1 is empty? = true
+var2 is empty? = true
+var3 is empty? = false
+var4 is empty? = false
+
+var1 is not empty? = false
+var2 is not empty? = false
+var3 is not empty? = true
+var4 is not empty? = true
+StringUtils isEmpty = String isEmpty checks + checks for null.
+
+StringUtils isBlank = StringUtils isEmpty checks + checks if the text contains only whitespace character(s).
+trimToEmpty
+public static String trimToEmpty(String str)
+Removes control characters (char <= 32) from both ends of this String returning an empty String ("") if the String is empty ("") after the trim or if it is null.
+
+The String is trimmed using String.trim(). Trim removes start and end characters <= 32. To strip whitespace use stripToEmpty(String).
+
+ StringUtils.trimToEmpty(null)          = ""
+ StringUtils.trimToEmpty("")            = ""
+ StringUtils.trimToEmpty("     ")       = ""
+ StringUtils.trimToEmpty("abc")         = "abc"
+ StringUtils.trimToEmpty("    abc    ") = "abc"
+ 
+Parameters:
+str - the String to be trimmed, may be null
+Returns:
+the trimmed String, or an empty String if null input
+Since:
+2.0
